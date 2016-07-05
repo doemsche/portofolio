@@ -1,0 +1,14 @@
+install-order:
+-webpack
+-webpack-dev-server
+-json-loader
+-babel-core
+-babel-loader
+-babel-preset-es2015
+-babel-preset-react
+
+-react
+-react-dom
+
+
+-style-loader css-loader
