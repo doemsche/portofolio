@@ -197,7 +197,7 @@ var Grid = (function() {
     };
 
   function init( config ) {
-    
+    // debugger;
     // the settings..
     settings = $.extend( true, {}, settings, config );
 
@@ -275,7 +275,6 @@ var Grid = (function() {
       hidePreview();
       return false;
     } ).children( 'a' ).on( 'click', function(e) {
-
       var $item = $( this ).parent();
       // check if item already opened
       current === $item.index() ? hidePreview() : showPreview( $item );
@@ -351,7 +350,7 @@ var Grid = (function() {
       this.$closePreview = $( '<span class="og-close"></span>' );
       this.$previewInner = $( '<div class="og-expander-inner"></div>' ).append( this.$closePreview, this.$fullimage, this.$details );
       this.$previewEl = $( '<div class="og-expander"></div>' ).append( this.$previewInner );
-      // append preview element to the item
+    // append preview element to the item
       this.$item.append( this.getEl() );
       // set the transitions for the preview and the item
       if( support ) {
@@ -486,7 +485,7 @@ var Grid = (function() {
 
     },
     positionPreview : function() {
-
+      console.log('pso')
       // scroll page
       // case 1 : preview height + item height fits in window´s height
       // case 2 : preview height + item height does not fit in window´s height and preview height is smaller than window´s height

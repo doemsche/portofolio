@@ -6,7 +6,7 @@ body {
     font-size: 14px;
     color: #2f2f2f;
     height: 100%;
-    font-family: 'MuseoSlab-300',sans-serif;
+    font-family: 'MuseoSlab-300',serif;
     text-shadow: 1px 1px 1px #fff;
 }
 
@@ -23,7 +23,7 @@ body {
   list-style: none;
   padding: 20px 0;
   margin: 0 auto;
-  text-align: center;
+  /*text-align: center;*/
   width: 100%;
 }
 
@@ -36,10 +36,10 @@ body {
 
 .og-grid li > a,
 .og-grid li > a img {
-/*  border: none;
+  border: none;
   outline: none;
   display: block;
-  position: relative;*/
+  position: relative;
 }
 
 .og-grid li.og-expanded > a::after {
@@ -51,7 +51,7 @@ body {
   position: absolute;
   pointer-events: none;
   border-bottom-color: #ddd;
-  border-width: 15px;
+  border-width: 20px;
   left: 50%;
   margin: -20px 0 0 -15px;
 }
@@ -108,7 +108,7 @@ body {
 
 .og-fullimg,
 .og-details {
-  width: 50%;
+  width: 46%;
   float: left;
   height: 100%;
   overflow: hidden;
@@ -226,6 +226,7 @@ body {
     float: left;
     margin-left: 5px;
     margin-bottom:5px;
+
 }
 
 .work .one-work {
@@ -243,6 +244,7 @@ body {
 }
 
 .one-work span {
+  z-index: 1000;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -267,7 +269,7 @@ body {
     text-align: center;
     font-family: 'MuseoSlab-300',serif;
     text-shadow: 0 -1px 1px rgba(153, 204, 0, 0.62);
-    top: 80px;
+    top: 60px;
     position: relative;
     border-top: 1px solid #f4f4f4;
     border-bottom: 1px solid #f4f4f4;
@@ -277,6 +279,7 @@ body {
     -o-box-shadow: 0 -1px 0 rgba(153, 204, 0, 0.62),inset 0 -1px 0 rgba(153, 204, 0, 0.62);
     -ms-box-shadow: 0 -1px 0 rgba(153, 204, 0, 0.62),inset 0 -1px 0 rgba(153, 204, 0, 0.62);
     box-shadow: 0 -1px 0 rgba(153, 204, 0,0.48),inset 0 -1px 0 rgba(153, 204, 0, 0.62);
+  text-shadow: 1px 1px 1px #999999;
 }
 
 .one-work:hover span,.one-work:focus span {
@@ -286,11 +289,11 @@ body {
 }
 
 .anim {
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -o-transition: all .3s;
-    -ms-transition: all .3s;
-    transition: all .3s;
+    -webkit-transition: all 0.75s;
+    -moz-transition: all 0.75s;
+    -o-transition: all 0.75s;
+    -ms-transition: all 0.75s;
+    transition: all 0.75s;
 }
 .content {
     position: relative;
