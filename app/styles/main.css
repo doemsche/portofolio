@@ -116,7 +116,7 @@ body {
 }
 
 .og-details {
-  padding: 0 40px 0 20px;
+  padding: 0 0 0 20px;
 }
 
 .og-fullimg {
@@ -132,8 +132,8 @@ body {
 .og-details h3 {
   font-weight: 300;
   font-size: 52px;
-  padding: 40px 0 10px;
-  margin-bottom: 10px;
+  padding: 0 0 10px;
+  margin: 0 0 0 10px;
 }
 
 .og-details p {

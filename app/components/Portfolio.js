@@ -5,7 +5,10 @@ const Portfolio = ({projects}) => {
       {projects.map((p,idx)=>{
         
         return <li key={idx}>
-                  <a data-largesrc={'http://tympanus.net/Tutorials/ThumbnailGridExpandingPreview/images/2.jpg'} data-title={p.name} data-description={p.description} className={'anim one-work'}>
+                  <a data-largesrc={p.sname+"/preview.png"} 
+                     data-title={p.name} 
+                     data-description={p.description} 
+                     className={'anim one-work'}>
                     <span className={'anim'}>
                       <h3>{p.name}</h3>
                     </span>
